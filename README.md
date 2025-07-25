@@ -40,3 +40,25 @@
 - 🔄 **In development**
 - 🔐 Private beta planned Q4 2025
 - 📈 Seeking Garmin Health API access to support early partners and onboarding
+
+## Deploying to Turbify
+
+1. Use Turbify's file manager or an FTP client to upload the files in this repository.
+2. Maintain the directory structure exactly as shown:
+
+```
+/
+  index.html
+  about.html
+  product.html
+  contact.html
+  privacy.html
+  terms.html
+  css/
+  js/
+  images/
+```
+
+3. If using the file manager, create the `css`, `js`, and `images` folders before uploading their contents.
+4. For the contact form, this site uses Formspree. Replace the `action` attribute in `contact.html` with your own Formspree endpoint if needed.
+
