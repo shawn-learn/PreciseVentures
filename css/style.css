@@ -6,27 +6,42 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #fff;
+    color: #4F4F4F;
+    background-color: #FAFAFA;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #2D2D2D;
 }
 
 .container {
-    max-width: 960px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 24px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 0 64px;
+    }
 }
 
 /* Header */
 .site-header {
-    background-color: #ffffff;
-    border-bottom: 1px solid #eee;
+    background-color: #FAFAFA;
+    border-bottom: 1px solid #E0E0E0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 .site-header .logo {
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     text-decoration: none;
-    color: #333;
+    color: #2D2D2D;
     font-size: 1.5rem;
 }
 .site-nav {
@@ -41,7 +56,10 @@ body {
 }
 .site-nav a {
     text-decoration: none;
-    color: #333;
+    color: #2D2D2D;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
 }
 .nav-toggle {
     display: none;
@@ -64,23 +82,25 @@ body {
     display: inline-block;
     padding: 0.75rem 1.5rem;
     margin-top: 1rem;
-    border-radius: 4px;
+    border-radius: 6px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
 }
 .btn-primary {
-    background-color: #1e90ff;
+    background-color: #2F80ED;
     color: #fff;
 }
 .btn-secondary {
-    background-color: #fff;
-    color: #1e90ff;
-    border: 2px solid #1e90ff;
+    background-color: transparent;
+    color: #2F80ED;
+    border: 2px solid #2F80ED;
 }
 
 /* Sections */
 section {
-    padding: 2rem 0;
+    padding: 80px 0;
 }
 
 .feature-list {
@@ -94,6 +114,7 @@ section {
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
+    border-radius: 8px;
 }
 
 .contact-form {
@@ -105,14 +126,15 @@ section {
 .contact-form textarea {
     padding: 0.5rem;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 8px;
 }
 
 .site-footer {
-    background-color: #f5f5f5;
+    background-color: #FAFAFA;
     padding: 1rem 0;
     text-align: center;
     margin-top: 2rem;
+    border-top: 1px solid #E0E0E0;
 }
 .footer-links {
     list-style: none;
@@ -123,7 +145,7 @@ section {
 }
 .footer-links a {
     text-decoration: none;
-    color: #333;
+    color: #2D2D2D;
 }
 .social-links {
     list-style: none;
