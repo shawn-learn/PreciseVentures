@@ -8,3 +8,11 @@ if (navToggle && nav) {
         nav.classList.toggle('active');
     });
 }
+
+// Fade out the splash screen when all assets have loaded
+window.addEventListener('load', () => {
+    const splash = document.getElementById('splash-screen');
+    if (splash) {
+        setTimeout(() => splash.classList.add('hidden'), 500);
+    }
+});
