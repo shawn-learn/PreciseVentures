@@ -112,14 +112,11 @@ section {
     list-style: disc inside;
     margin-left: 1rem;
 }
-.screenshot-placeholder {
-    background-color: #ddd;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.product-screenshot {
+    max-width: 100%;
     margin-top: 1rem;
     border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form {
